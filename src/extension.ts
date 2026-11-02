@@ -3,7 +3,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as crypto from 'crypto';
 
-// Directories we never want to scan — junk/deps/build output
+// Directories we never want to scan — dependencies and build output
 const EXCLUDE_DIRS = new Set([
   'node_modules', '.git', 'dist', 'out', 'build', '__pycache__', '.venv'
 ]);
